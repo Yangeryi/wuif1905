@@ -1,0 +1,240 @@
+body ,b, h1,h2,h3,h4,h5,h6,p, ul,ol,li,form,input{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background: #E9EAED;
+    font-family: 微软雅黑,sans-serif;
+    font-size: 15px;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height:100%;
+    display:block;
+}
+.header{
+    width: 100%;
+    height:60px;
+    background: #1C2327;
+    position: relative;
+}
+.header::before{
+    content: "";
+    width: 100%;
+    height: 5px;
+    background: #000 linear-gradient(to left, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
+    top: 0;
+    position: absolute;
+}
+.head-box{
+    width: 1200px;
+    height:60px;
+    line-height: 60px;
+    margin: 0 auto;
+}
+.head-box h2{
+    color: #fff;
+    font-weight:normal;
+    width: 160px;
+    height: 100%;
+    float: left;
+}
+.head-box ul{
+    color: #fff;
+    height: 100%;
+    float: left;
+    margin-left: 80px;
+}
+.head-box li{
+    float:left;
+    margin-right: 40px;
+}
+.head-box li a:hover{
+    color:#00c1de;
+}
+.head-box .search{
+    color: #fff;
+    width: 50px;
+    height: 100%;
+    background: #1C2327;
+    float: right;
+}
+.head-box .search img{
+    width: 30px;
+    height: 30px;
+    margin: 15px 10px;
+}
+.main{
+    width: 1200px;
+    height:auto;
+    min-height: 60px;
+    margin-top:20px;
+    margin-left:auto;
+    margin-right:auto;
+    background: #fff;
+    padding:20px;
+    position: relative;
+}
+.main > img{
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.title {
+    width:100%;
+    height:40px;
+    border-bottom: 1px solid #eee;
+    line-height:40px;
+    color: #333;
+    font-size: 16px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.title:hover::before{
+    width: 80px;
+}
+.title::before{
+    content: " ";
+    width:64px;
+    height:2px;
+    background: #333333;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition: all .5s ease-in;
+}
+.axis ,axis2 {
+    width: 100%;
+}
+.axis li , axis2 li {
+    width: 100%;
+}
+.axis li:hover a::before , .axis2 li:hover a::before{
+    background: #000;
+}
+.axis li span , .axis2 li span{
+    line-height: 32px;
+    padding-right: 40px;
+    color: #999;
+    position: relative;
+}
+.axis li span::after , .axis2 li span::after{
+    content: '';
+    width: 2px;
+    height: 40px;
+    background: #e0dfdf;
+    right: 17px;
+    position: absolute;
+}
+.axis li i , .axis2 li i{
+    font-style: normal;
+    position: relative;
+}
+.axis li a , .axis2 li a{
+    color: #333;
+
+}
+.axis li a::before , .axis2 li a::before{
+    content: "";
+    height: 10px;
+    width: 10px;
+    border: 2px solid #cccaca;
+    background: #fff;
+    position: absolute;
+    top: 4px;
+    left: -30px;
+    border-radius: 50%;
+}
+.axis-bottom , .axis2-bottom  {
+    height: 32px;
+    margin-top:20px;
+    line-height: 32px;
+    text-align: center;
+}
+.axis-bottom a , .axis2-bottom a{
+    padding: 5px 10px;
+    color: #666;
+    background: #F7F7F7;
+    margin-right: 5px;
+}
+.axis-bottom a.hot , .axis2-bottom a.hot{
+    color: #19585d;
+    font-weight: bold;
+}
+.axis-bottom a:hover , .axis2-bottom a:hover{
+    background: #000;
+    color: #fff;
+}
+footer{
+    width: 100%;
+    height: 190px;
+    background: #373D41;
+    border-top: 10px solid #00C1DE;
+    margin-top: 20px;
+}
+.statement{
+    height: 120px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+    color:#73777a;
+    font-size: 14px;
+}
+.statement-pic{
+    width: 240px;
+    height: 120px;
+    float: left;
+}
+.statement-pic li{
+    width: 100px;
+    height: 120px;
+    margin-right: 20px;
+    float: left;
+}
+
+.statement-pic li img{
+    width: 100px;
+    height: 100px;
+}
+.statement-pic li span{
+    width: 100px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    margin-top: 5px;
+    display: block;
+
+}
+.statement-words{
+    margin-left: 10px;
+    width: 745px;
+    height:120px;
+    float: left;
+    color: #73777a;
+
+}
+.statement-words .statement-words1 {
+    height:18px;
+    margin-bottom: 13px;
+    color:#00c1de;
+    font-size:18px;
+}
+.statement-words p{
+    height:18px;
+    margin-bottom: 13px;
+}
+.statement-btn{
+    width: 40px;
+    height: 40px;
+    background: rgb(0, 0, 0);
+    position: fixed;
+    right: 20px;
+    bottom: 10%;
+}

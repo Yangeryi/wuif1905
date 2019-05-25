@@ -77,47 +77,22 @@ img{
     margin-left:auto;
     margin-right:auto;
     background:#E9EAED;
+    overflow: hidden;
 }
 .mainLeft{
     width: 900px;
     height: auto;
     float:left;
-    background: #E9EAED;
+    background:  #E9EAED;
     border-radius: 5px;
 }
-.diary{
+.mic-diary{
     width: 860px;
-    height: 100px;
     padding: 20px;
     border-radius:5px;
     background:#fff;
+    overflow: hidden;
 }
-.diary-pic{
-    height: 100px;
-    width: 130px;
-    margin-right: 20px;
-    float: left;
-}
-.diary-words{
-    float: right;
-    height: 100px;
-    width:710px;
-
-}
-.diary-words h3{
-    height: 33px;
-    width:730px;
-    font-size: 22px;
-    margin-bottom: 15px;
-
-}
-.diary-words p{
-    width:730px;
-    height: 44px;
-    display: block;
-    line-height: 1.5;
-}
-
 
 .slide{
     width: 242px;
@@ -138,6 +113,17 @@ img{
     font-size: 16px;
     position: relative;
 }
+.title span {
+    float: right;
+    font-size: 14px;
+    color: #666;
+}
+.title span a{
+    color: #666;
+}
+.title span a:hover{
+    color: #000;
+}
 .title:hover::before{
     width: 80px;
 
@@ -152,85 +138,31 @@ img{
     bottom: -1px;
     transition: all .5s ease-in;
 }
-.mic-blog{
-    width:860px;
-    height:auto;
+.mic-diary h1{
+    font-size: 22px;
     margin-top: 20px;
-    background:#fff;
-    padding: 20px;
+    display: block;
+    font-weight: bold;
 }
-.essay{
-    width: 850px;
-}
-.essay1{
-    width: 850px;
-    height:195px;
-    background: #fff;
-    margin-top: 10px;
-    border-bottom: 1px dashed #e4e3e3;
-}
-.essay1:hover h3 a{
-    color:#337ab7;
-}
-.essay1 h3{
-    height: 48px;
-    width: 100%;
-    line-height: 48px;
-}
-.essay1 h3 a{
-    color: #333;
-}
-.essay1-pic{
-    width: 200px;
-    height: 124px;
-    float: left;
-    position: relative;
-    transition: all ease-in .2s;
-    overflow: hidden;
-}
-.essay1-pic:hover img{
-    transform: scale(1.2,1.2);
-}
-.essay1-pic p{
-    position: absolute;
-    padding-left: 5px;
-    padding-right: 5px;
-    left: 0;
-    top: 0;
-    height: 28px;
-    text-align: center;
-    background: #38b9d9;
-    line-height: 28px;
-    overflow: auto;
-}
-.essay1-words{
-    width: 630px;
-    height: 124px;
-    margin-left: 20px;
-    float: right;
-    margin-top: 14px;
-}
-.essay1-list{
+.list{
     height: 34px;
     margin-top: 23px;
     color: #999;
+    overflow: hidden;
 }
-.essay1-list li{
+.list .listLeft{
     height: 34px;
-    float: left;
-    margin-right: 14px;
-    line-height: 34px;
     position: relative;
+    float: left;
+    margin-right: 10px;
 }
-
-.essay1-list a img{
+.list .listLeft img{
     width: 30px;
     height: 30px;
     border-radius: 50%;
     border: 2px solid #096 ;
-
 }
-.essay1-list a .essay1-list-v {
+.list .listLeft .v{
     content: '';
     width: 12px;
     height: 12px;
@@ -240,76 +172,31 @@ img{
     left:20px;
     border-radius: 50%;
 }
-.essay1-list .design a{
-    color:#096 ;
-}
-.essay1-btn{
-    width:60px;
-    height: 28px;
-    background: #12b7de;
-    color: #fff;
-    float: right;
-    line-height: 28px;
-    padding:0 10px;
-    margin-right: 10px;
-    text-align: center;
-
-}
-.essay12{
-    width: 850px;
-    height:195px;
-    background: #fff;
-    margin-top: 10px;
-    border-bottom: 1px dashed #e4e3e3;
-}
-.essay12 h3{
-    height: 48px;
-    width: 100%;
-    line-height: 48px;
-}
-.essay12 h3 a{
-    color: #333;
-}
-.essay12 h3 a:hover{
-    color:#337ab7;
-}
-.essay12-words{
-    height: 124px;
+.list .listRight{
     float: left;
-    margin-top: 14px;
-}
-.essay12-list{
-    height: 34px;
-    margin-top: 23px;
-    color: #999;
-}
-.essay12-list li{
-    height: 34px;
-    float: left;
-    margin-right: 14px;
     line-height: 34px;
-    margin-bottom: 20px;
 }
-.essay12-list a img{
-    width: 34px;
-    height: 34px;
-    border-radius: 17px;
-    border: 2px solid #096 ;
-}
-.essay12-list .design a{
-    color:#096 ;
-}
-.essay12-btn{
-    width:60px;
-    height: 28px;
-    background: #12b7de;
-    color: #fff;
-    float: right;
-    line-height: 28px;
-    padding:0 10px;
+.list .listRight  li{
+    display: inline-block;
+    float: left;
     margin-right: 10px;
-    text-align: center;
-
+}
+.mic-diary p{
+    color: #888;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #F3F3F3;
+    line-height: 23px;
+    background-color: rgb(246, 246, 246);;
+}
+.mic-diary p b{
+    color: #000;
+    margin-right: 10px;
+}
+.mic-diary .pic{
+    margin-top: 10px;
+    width: 860px;
+    height: 300px;
 }
 .mainRight{
     width: 282px;
@@ -501,7 +388,7 @@ img{
     background: #3FB8AF;
 }
 .tag>a:nth-child(8n-4){
-     background: #FE4365;
+    background: #FE4365;
 }
 .tag>a:nth-child(8n-3){
     background: #FC9D9A;
@@ -514,7 +401,7 @@ img{
 }
 .tag>a:nth-child(8n){
     background: #83AF9B;
-     }
+}
 .lovely-list{
     width: 242px;
     /*height:402px;*/
@@ -573,7 +460,7 @@ img{
     margin-left: 25px;
 
 }
-.tail{
+footer{
     width: 100%;
     height: 190px;
     background: #373D41;
@@ -631,7 +518,6 @@ img{
 .statement-words p{
     height:18px;
     margin-bottom: 13px;
-
 }
 .statement-btn{
     width: 40px;
