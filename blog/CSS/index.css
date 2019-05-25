@@ -171,7 +171,6 @@ img{
     transform: scale(1.2,1.2);
 
 }
-
 .image-center p{
     position: absolute;
     color: #fff;
@@ -377,7 +376,6 @@ img{
 }
 .title:hover::before{
     width: 80px;
-
 }
 .title::before{
     content: " ";
