@@ -87,6 +87,7 @@ img{
     width: 620px;
     height:260px;
     float: left;
+    overflow: hidden;
 }
 .image-left .image-leftI{
     width:100%;
@@ -95,15 +96,15 @@ img{
 .image-left .image-leftI li{
     width:100%;
     height:100%;
-}
-.image-left .image-leftI li{
-    width:100%;
-    height:100%;
     display:block;
     position: absolute;
-    left: 0;
+    left: 620px;
     top: 0;
 }
+.image-left .image-leftI li:first-child{
+    left: 0;
+}
+
 .image-btnLeft , .image-btnRight{
     position: absolute;
     width: 40px;
@@ -139,8 +140,9 @@ img{
     margin-right: 14px;
     float: left;
 }
-.image-btnList li:hover{
+.image-btnList li.hot{
     background: #12b7de;
+    transition: 0.6ms;
 }
 .image-center{
     width: 268px;
@@ -207,16 +209,56 @@ img{
     float:left;
     font-size:22px;
 }
-.image-right ul{
+.image-right .info{
     width: 284px;
-    height:99px;
     margin-left:20px;
     float:left;
     color: #D0D2D4;
 }
-.image-right ul li{
+.image-right .info li{
     height:14px;
     margin-bottom: 16px;
+    font-size: 12px;
+}
+.image-right .contact{
+    float:left;
+    margin-left:20px;
+}
+.image-right .contact li{
+    display: inline-block;
+    width: 53px;
+    height: 53px;
+    line-height: 53px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    float:left;
+    box-shadow: 0px 1px 0px rgba(255,255,255,.1);
+/*, inset 0px 1px 1px rgba(0,0,0,.7);*/
+    border-radius: 50%;
+    /*border: 1px solid #FFFFFF;*/
+}
+.image-right .contact li a{
+    display: block;
+    overflow: hidden;
+
+    margin: 0 5px;
+}
+.image-right .contact li .icon-zhuye{
+    color: #ef5509;
+    font-size: 30px;
+}
+.image-right .contact li .icon-youxiang{
+    color: #FF991A;
+    font-size: 36px;
+}
+.image-right .contact li .icon-qq{
+    color: #1296DB;
+    font-size: 30px;
+}
+.image-right .contact li .icon-weixin{
+    color: #07AF12;
+    font-size: 30px;
 }
 .diary{
     width: 1200px;
@@ -242,14 +284,14 @@ img{
     margin-left:20px;
     border-bottom: 1px solid #e4e3e3;
 }
-.diary-left1 h4{
-    width:100px;
-    height:39px;
-    color: #333333;
-    font-weight:normal;
-    float: left;
-    font-size: 16px;
-}
+/*.diary-left1 h4{*/
+/*    width:100px;*/
+/*    height:39px;*/
+/*    color: #333333;*/
+/*    font-weight:normal;*/
+/*    float: left;*/
+/*    font-size: 16px;*/
+/*}*/
 .diary-left1 ul{
     height:39px;
     color: #333333;
